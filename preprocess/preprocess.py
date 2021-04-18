@@ -143,20 +143,3 @@ def get_forex_graph(names=get_forex_pair_names()):
 
     return forex_graph, forex_connections_matrix
 
-
-if __name__ == '__main__':
-    #df = load_data("../data/preprocessed/merged.csv")
-    #close_df = transform(df)
-
-    g, connections_matrix = get_forex_graph()
-    print(type(connections_matrix), np.shape(connections_matrix))
-    embedding = np.ones((20, 8))
-
-    for i in range(20):
-        boolean_mask = connections_matrix[i][:]
-        inputs = embedding[boolean_mask, :]
-
-        print("i:", i)
-        print(boolean_mask, np.shape(boolean_mask))
-        print(np.shape(inputs))
-
