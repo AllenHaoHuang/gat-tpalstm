@@ -1,6 +1,6 @@
 # COMP5709 Individual Capstone Project
 
-GAT TPA-LSTM for Multivariate Time Series forcasting with Graph Structured data 
+GAT combined with TPA-LSTM for Multivariate Time Series forcasting with Graph Structured data.  
 
 Author: Allen Huang
 
